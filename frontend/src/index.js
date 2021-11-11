@@ -2,6 +2,8 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import './index.css'
 import App from './components/App'
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 function ColorfulBorder() {
   return (
@@ -16,9 +18,9 @@ function ColorfulBorder() {
 }
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <ColorfulBorder />
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 )
